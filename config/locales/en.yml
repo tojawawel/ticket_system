@@ -1,0 +1,269 @@
+en:
+  signature_msg: "Document was signed from account '%{name}' on %{time} from IP address %{ip}"
+  access_denied: "You don't have sufficent permissions to visit this page."
+  record_not_found: '%{record} not found.'
+  not_found: 'Record not found.'
+  record_invalid: 'Record invalid.'
+  record_not_destroyed: 'Record was not destroyed.'
+  recaptcha_error: 'There were problems verifying recaptcha.'
+  something_went_wrong: 'Something went wrong.'
+  invalid_include_param: 'Provided invalid include param.'
+  clients:
+    email_exists: "User with email from row %{index} already exists. \n"
+    no_adviser: "Cannot find Adviser based on adviser's email from row %{index}. \n"
+    no_full_name: "Cannot create client from row %{index} with no full name. \n"
+    no_records: 'No records!'
+    record_created: "Record from %{index} row was successfully imported. \n"
+    too_many_records: 'Too many records! %{max_count} is the max amount.'
+  sessions:
+    create:
+      invalid_email_or_password: 'Incorrect e-mail or password.'
+      locked_user: 'Account blocked, email with unlock link has been sent.'
+  confirmations:
+    show:
+      invalid_token: 'Incorrect confirmation token.'
+      already_confirmed: 'You have already confirmed your account.'
+      user_confirmation: 'Your account has been successfully created.'
+      email_confirmation: 'Your new email address has been confirmed.'
+    update:
+      user_confirmation: 'Your account has been successfully created.'
+  unlocks:
+    show:
+      account_not_locked: 'Account is not locked. You can sign in to your account.'
+      invalid_token: 'Incorrect unlock token.'
+  documents:
+    cannot_revert: 'Document cannot be reverted (not the last one). Please refresh the page and try again.'
+    cannot_sign: 'Document cannot be signed (not the last one). Please refresh the page and try again.'
+    cannot_update: 'Document cannot be updated (not the last one). Please refresh the page and try again.'
+    not_exist: 'Document do not exist.'
+    invalid_document_size: 'Maximum document sizes are: PDF: 15 MB. Other documents: 25MB'
+    invalid_client_document_size: 'Maximum document sizes are: PDF: 15 MB. Other documents: 5MB'
+    invalid_motivation_centre_file_type: 'Invalid file type for given item type'
+  invitations:
+    destroy_fail: 'Cannot delete invitation for non-client user.'
+  mailers:
+    footer_1: 'Sovereign Wealth Private Clients is a trading name of Sovereign Wealth LLP. Sovereign Wealth LLP is a Limited Liability Partnership registered in England and Wales, Number OC350767. Registered Office: Building 1265, The Octagon, Century Way, Thorpe Park, Leeds, LS15 8ZB.'
+    footer_2: "Sovereign Wealth LLP represents only St. James's Place Wealth Management plc (which is authorised and regulated by the Financial Conduct Authority) for the purpose of advising solely on the Group's wealth management products and services, more details of which are set out on the Group's website"
+    subjects:
+      locked: 'Account locked'
+      confirmed: '[Action Requested] Confirm email change'
+      to_confirm: '[Action Requested] Please confirm your email address'
+      new_client: '[Action Requested] Your %{current_practice_name} account has been created'
+  motivation_centre_items:
+    client:
+      invalid_item: 'Requested motivation centre item does not belong to given client.'
+  notifications:
+    advice_rooms:
+      created: 'Advice Room was created by %{notifier} at %{date}'
+      date_update: 'Advice Room date was updated by %{notifier} at %{date}'
+      completed: 'Advice Room was marked as `Advice Room completed` by %{notifier} at %{date}'
+      cancelled: 'Advice Room was marked as `Advice Room cancelled` by %{notifier} at %{date}'
+    meeting_requests:
+      completed: 'Face-to-face meeting request was marked as `Meeting completed` by %{notifier} at %{date}'
+      cancelled: 'Face-to-face meeting request was marked as `Meeting cancelled` by %{notifier} at %{date}'
+    review_questionnaire:
+      accepted: 'Review Questionnaire was reviewed by %{notifier} at %{date}'
+    document_packs:
+      sent: 'Document Pack was sent by %{notifier} at %{date}'
+      re_sent: 'Document Pack was re-sent by %{notifier} at %{date}'
+    financial_strategies:
+      updated: 'Financial Strategy was updated by %{notifier} at %{date}'
+      sent: 'Financial Strategy was sent by %{notifier} at %{date}'
+    todo_list:
+      updated: 'Todo List was updated by %{notifier} at %{date}'
+      sent: 'Todo List was sent by %{notifier} at %{date}'
+    tasks:
+      created: 'A new task was created by %{notifier} at %{date}'
+      updated: 'A task description was updated by %{notifier} at %{date}'
+      completed: 'A task was completed by %{notifier} at %{date}'
+      uncompleted: 'A task was marked as uncompleted by %{notifier} at %{date}'
+    mark_as_seen:
+      invalid_ids: 'The following notifications ids do not belong to you: %{notifications_ids}'
+    emails:
+      client_reviewing_pack: 'Email titled: `Your personal recommendation is ready for your review` was sent to %{user_email} on %{date}'
+      client_recommendation_pack_case_created: 'Email titled: `Your personal recommendation is ready for your review` was sent to %{user_email} on %{date}'
+      client_document_pack_case_created: 'Email titled: `New Document Pack` was sent to %{user_email} on %{date}'
+      client_building: 'Email titled: `Resubmit your %{additional_message}` was sent to %{user_email} on %{date}'
+      client_confirmed: 'Email titled: `Case complete` was sent to %{user_email} on %{date}'
+      new_review_questionnaire_case: 'Email titled: `New Questionnaire` was sent to %{user_email} on %{date}'
+      new_adviser_assigned: 'Email titled: `Your Adviser has been assigned` was sent to %{user_email} on %{date}'
+      client_advice_room_meeting: 'Email titled: `Advice Room meeting` was sent to %{user_email} on %{date}'
+      client_advice_room_canceled: 'Email titled: `Advice Room meeting - cancelled` was sent to %{user_email} on %{date}'
+      financial_strategy_updated: 'Email titled: `Financial Strategy` was sent to %{user_email} on %{date}'
+
+  services:
+    invitations:
+      invitation_message: 'Invitation already sent to that e-mail address.'
+      user_message: 'User has already joined the platform.'
+  super_admin:
+    practices:
+      drop_tenant:
+        success: "Practice was deleted. Ask DevOps to remove folder with practice's id (%{practice_id}) from S3 bucket."
+        error: 'Wrong password!'
+        not_current_practice: 'Cannot remove current practice'
+    practice_directors:
+      create:
+        success: 'Practice Director created successfully.'
+        error: 'There were problems creating Practice Director.'
+      update:
+        success: 'Practice Director updated successfully.'
+        error: 'There were problems updating Practice Director.'
+  client_cases:
+    client:
+      invalid_client_case: 'Requested client case does not belong to given client.'
+    missing_fact_find: 'Client Case does not have a Fact Find.'
+    missing_financial_audit: 'Client case does not have a Financial Audit'
+    invalid_financial_audit: 'This financial audit is now inaccessible due to is relating to a previous tax year.'
+    completed_financial_audit: 'This financial audit was already completed.'
+    not_provided: 'Initial investment must be provided.'
+    required: 'Monthly contribution required'
+    initial_investment_value: 'Minimum initial investment for %{case_type} is %{min_value}'
+    min_monthly_contribution: 'Minimal monthly contribution is %{min_value}'
+    min_monthly_case_value: 'Minimal monthly contribution for %{case_type} is %{min_value}'
+    duration: 'Invalid investment duration.'
+  fact_finds:
+    invalid_asset: 'Provided Asset is invalid. Asset should include Policy Number and Policy Provider Name.'
+    chargeable_answers:
+      positive: 'Yes. Highest rate: %{rate}'
+    transfer_answers:
+      :true: 'Yes'
+      :false: 'No'
+      not_applicable: 'Not applicable'
+    booleans:
+      :true: 'Yes.'
+      :false: 'No.'
+      :empty_response: 'No details provided'
+    marital_status_options:
+      single: 'Single'
+      married: 'Married / Civil Partner'
+      divorced: 'Divorced / Partner of a dissolved Civil Partnership'
+      widowed: 'Widowed / Surviving Civil Partner'
+      separated: 'Separated'
+      not_disclosed: 'Not disclosed'
+    income_options:
+      employment: 'Employment income'
+      self_employment: 'Self-employment income'
+      investment: 'Investment income'
+      private_pension: 'Private Pension income'
+      state_pension: 'State Pension income'
+      rental_income: 'Rental income'
+      other_state_benefits: 'Other State benefits'
+      other_income: 'Other income'
+    asset_types:
+      cash: 'Cash'
+      isa: 'ISA (Individual Savings Account)'
+      pension: 'Pension'
+      unit_trust: 'Unit Trust'
+      stock_shares: 'Stocks & Shares'
+      other_investment: 'Other investment'
+      business: 'Business'
+      property: 'Property'
+      other_valuable_asset: 'Other valuable asset'
+      investment_bond: 'Investment bond'
+    liabilities_types:
+      mortgage: 'Mortgage'
+      personal_loan: 'Personal loan'
+      car_loan: 'Car loan'
+      credit_card_debt: 'Credit card debt'
+      student_loan: 'Student loan'
+      other_debt: 'Other debt'
+    tax_rate_options:
+      :45: '45%'
+      :40: '40%'
+      :20: '20%'
+      :10: '10%'
+      :46: '46% Scotland'
+      :41: '41% Scotland'
+      :21: '21% Scotland'
+      :19: '20% Scotland'
+      :80: '80%'
+    letter_of_authority:
+      missing_client_agreement: 'Client did not provide an agreement to print Letter of Authority.'
+      missing_partner_agreement: 'Partner did not provide an agreement to print Letter of Authority.'
+      missing_client_signature: 'Client did not add Signature.'
+      missing_partner_signature: 'Partner did not add Signature.'
+      to_whome_it_may_concern: |
+        Please accept this letter as authority to provide information on my/our plans listed below as requested by %{practice_formal_name}, %{practice_address}
+
+        This instruction does not supersede any existing arrangements on my/our plans by a financial adviser. Please retain this instruction on your records on a permanent basis until cancelled by me/us.
+  financial_audit:
+    question_1: 'Which band does your taxable income for this tax year fall into?'
+    question_2: 'If relevant, which band does the taxable income of your Partner fall into for the current tax year?'
+    question_3: 'Do you (and/or, if relevant, your Partner) invest less than the maximum (£20,000 per tax year) into ISAs?'
+    question_4: 'Will you (and/or, if relevant, your Partner) receive less than £1,000 (or £500 if a higher rate taxpayer) in interest in the current tax year?'
+    question_5: 'Are you (and/or, if relevant, your Partner) likely to receive less than £2,000 in dividends in the current tax year?'
+    question_6: 'Who of the following expects to realise capital gains of  £11,700 or less in the current tax year?'
+    question_7: 'Have you (and/or, if relevant, your Partner) realised a capital gain in excess of the annual exempt amount in the current tax year (£11,700) or any of the immediately preceding three tax years (£11,300 2017/18; £11,100 2016/17; £11,100 2015/16)?'
+    question_8: 'How much in total are you (and/or, if relevant, your Partner) and (if relevant) your employer(s) likely to contribute to your pension (before any tax relief) in this tax year?'
+    question_9: 'When are you (and/or, if relevant, your Partner) planning on taking benefits from your pensions?'
+    question_10: 'Do you (and/or, if relevant, your Partner) individually own assets worth more than £325,000 (£450,000 including up to £125,000 of the value of your share in your home)?'
+    question_11: 'Have you (and/or, if relevant, your Partner) made gifts of less than £3,000 in this or the previous tax year?'
+    question_12: 'Within the last three years have you (and/or, if relevant, your Partner) made a Will or reviewed your existing one?'
+    question_13: 'Have you (and/or, if relevant, your Partner) had any inheritances within the last two years?'
+    question_14: 'Are you certain that on your death (and/or, if relevant, your Partner’s death) your surviving beneficiaries and/or financial dependants would have sufficient capital/income to enjoy the life that you would wish for them?'
+    question_15: 'Have you (and/or, if relevant, your Partner) made provision for your affairs to be looked after should you lose the mental capacity to do so yourself?'
+  advice_rooms:
+    no_attendees: 'No attendees selected.'
+    too_many_attendees: 'Too many attendees selected (max. %{max_number}).'
+    meeting_cancelled:
+      summary: 'Meeting was cancelled'
+    composition:
+      invalid_advice_room: 'Twillio composition does not belong to given advice room.'
+      already_deleted: 'Composition is already deleted from twilio.'
+      composition_deleted: 'Cannot download composition. Composition has been deleted from twilio.'
+    client:
+      invalid_advice_room: 'Requested advice room does not belong to given client.'
+  activerecord:
+    errors:
+      models:
+        advice_room:
+          attributes:
+            client_id:
+              client_not_found: 'Client could not be found for adviser.'
+        user:
+          attributes:
+            password:
+              too_short: 'is too short'
+  date:
+    formats:
+      short: '%Y-%m-%d'
+      month_year: '%B %Y'
+      year_month: '%Y-%m'
+      formal: '%e %B %Y'
+      formal_with_time: '%e %B %Y at %H:%M'
+  time:
+    formats:
+      case_change: '%d %B %Y at %H:%M'
+      detailed: '%d/%m/%Y @ %I:%M%p'
+  password:
+    rules: 'Please refer to the password rules.'
+    invalid_current_password: 'Current password is invalid.'
+  ibusiness_pack:
+    errors:
+      state: 'Cannot create ibusiness pack for not accepted or confirmed Client Case.'
+      invalid_document: 'Invalid Client Case document requested.'
+      type: 'Invalid Client Case document type.'
+  money:
+    default_amount: '£0'
+  financial_strategy:
+    errors:
+      user_deactivated: 'User deactivated'
+      does_not_exist: 'Financial Strategy with given id does not exist.'
+  risk_assessment:
+    errors:
+      cannot_update: 'Cannot update risk assessment with already generated report. Please refresh the page.'
+  todo_list:
+    errors:
+      user_deactivated: 'User deactivated.'
+      does_not_exist: 'Todo List does not exist.'
+  task:
+    errors:
+      user_deactivated: 'User deactivated.'
+      does_not_exist: 'Task does not exist.'
+      already_completed: 'This task is already completed.'
+      todo_list_not_shared: 'Todo List is not yet shared.'
+  invoice:
+    invoices_updated: 'Invoices sucessfully fetched from Xero.'
+    submitted: 'Invoice was sucessfully submitted.'
+    errors:
+      already_submitted: 'Invoice for selected month and practice has already been submitted.'
